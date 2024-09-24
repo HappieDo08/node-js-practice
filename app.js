@@ -7,7 +7,8 @@ const program = new Command();
 program
 .option("-s, --show", "Display your Information")
 .option("-n, --name <name>", "Your Name")
-.option("-g, --gender <gender>", "Your Gender");
+.option("-g, --gender <gender>", "Your Gender")
+.allowUnknownOption(true);
 
 
 // program.parse(process.argv);
